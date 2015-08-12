@@ -13,16 +13,7 @@ tags:
  - island
 ---
 
-Welcome to Debut Island.
+##Welcome to Debut Island.
 
-Carte Noire began as a new theme for [my personal blog][1], but has now taken
-on a life of its own as a free theme for Jekyll.
-
-The theme has been designed with simplicity and readability in mind. It makes
-use of third party services such as Disqus ad AddThis to ensure the blog has
-all the features you would expect from a dynamic application such as Wordpress
-but with the hosting and maintenance simplicity of Jekyll.
-
-Please use/copy/share Carte Noire!
-
-[1]: http://tneciv.github.io/
+> "Japhy," I said out loud, I don't know when we'll meet again or what'll happen in the future, but Desolation, Desolation, I owe so much to Desolation. Thank you for guiding me to the place I learned all. Now comes the sadness of coming back to cities and I've grown two months older and there's all that humanity of bars and burlesque shows and gritty love, all upsidedown in the void God bless them, but Japhy you and me forever know, O ever youthful, O ever weeping."
+>>  ---The Dharm Bums
