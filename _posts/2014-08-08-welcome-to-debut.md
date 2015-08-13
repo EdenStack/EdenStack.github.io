@@ -3,7 +3,7 @@ layout:     post
 title:      Welcome to Debut Island
 date:       2015-08-12 18:05:19
 author:     Tneciv
-summary:    Carte Noire is a dark blog theme for Jekyll focusing on a clear reading experience.
+summary:    Blog of my github.
 categories: jekyll
 thumbnail:  heart
 tags:
