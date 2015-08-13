@@ -6,7 +6,7 @@ baseurl: ""
 url: "http://tneciv.github.io/"
 title_description: "O ever youthful, O ever weeping."
 title_image: "http://i.imgur.com/ozCHF4m.jpg"
-google_analytics: "UA-20365477-4"
+google_analytics: "UA-66290738-1"
 disqus_account: cartenoire
 github_repository: http://tneciv.github.io/
 addthis_id: ra-513c6fa83da6ec67
@@ -18,7 +18,7 @@ wechat: debut_
 stackoverflow_link: http://tneciv.github.io/
 
 # Footer
-footer_left: "Made with <i class=\"fa fa-heart\"></i> by Jacob Tomlinson forked by <a href=\"https://twitter.com/_JacobTomlinson\">Tneciv</a>"
+footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/_JacobTomlinson\">Tneciv</a>"
 footer_right: "&lt;/&gt; on <a href=\"https://github.com/Tneciv\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
 
 # Build settings
