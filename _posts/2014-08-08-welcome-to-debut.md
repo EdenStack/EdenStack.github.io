@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Welcome to Debut Island
-date:       2015-08-12 18:05:19
+date:       2014-08-08 18:05:19
 author:     Tneciv
 summary:    Blog of my github.
 categories: jekyll
