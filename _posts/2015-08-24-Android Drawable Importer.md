@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Android Studio插件之Android Drawable Importer
+title:      Android Drawable Importer
 date:       2015-08-24 16:47:18
 summary:    Android Drawable Importer插件
 author:     Tneciv
