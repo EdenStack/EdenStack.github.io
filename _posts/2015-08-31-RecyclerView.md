@@ -11,22 +11,24 @@ tags:
  - recyclerview
  - cardview
 ---
+
 ##RecyclerView Examples
 
 RecyclerView provides these built-in layout managers:
 
 > * LinearLayoutManager shows items in a vertical or horizontal scrolling list.
-> **//「线性布局，取代ListView」**
+> //「线性布局，取代ListView」
 > * GridLayoutManager shows items in a grid.
-> **//「网格布局，取代GridView」**
+> //「网格布局，取代GridView」
 > * StaggeredGridLayoutManager shows items in a staggered grid.
-> **//「交错网格布局，取代瀑布流」**
+> //「交错网格布局，取代瀑布流」
 
 To create a custom layout manager, extend the `RecyclerView.LayoutManager` class.
 
 
 
 The following code example demonstrates how to add the `RecyclerView` to a ***layout***:
+
 ````xml
 
 <!-- A RecyclerView with some commonly used attributes -->
