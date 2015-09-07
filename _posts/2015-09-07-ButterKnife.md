@@ -89,12 +89,15 @@ List<EditText> nameViews;
 ````
 
 ``apply``方法可以对整个view数组进行整体操作
+
 ````java
 ButterKnife.apply(nameViews, DISABLE);
+
 ButterKnife.apply(nameViews, ENABLED, false);
 ````
 
 ``Porperty``属性也可以通过apply方法在view数组中使用
+
 ````java
 ButterKnife.apply(nameViews, View.ALPHA, 0.0f);
 ````
@@ -147,6 +150,7 @@ public class FancyButton extends Button {
 
 ###绑定重置（针对Fragment）
 由于Fragment与Activity生命周期不同，在``onCreateView``中绑定Fragment时，如果需要在``onDestroyView``中将view设为null，可以使用ButterKnife的``unbind``方法
+
 ````java
 public class FancyFragment extends Fragment {
   @Bind(R.id.button1) Button button1;
@@ -168,6 +172,7 @@ public class FancyFragment extends Fragment {
 
 ###绑定其他属性
 ``@Nullable``注解可允许相对应的view或者listener为空
+
 ````java
 @Nullable @Bind(R.id.might_not_be_there) TextView mightNotBeThere;
 
@@ -178,6 +183,7 @@ public class FancyFragment extends Fragment {
 
 ###BONUS
 可以针对activity、view、dialog使用findById方式(需要import ButterKnife.findById)
+
 ````java
 View view = LayoutInflater.from(context).inflate(R.layout.thing, null);
 TextView firstName = ButterKnife.findById(view, R.id.first_name);
