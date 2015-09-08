@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      springmvc部分注解
-date:       2015-09-07 17:47:18
+date:       2015-09-08 09:25:18
 summary:    Spring MVC之json
 author:     Tneciv
 categories: spring
@@ -79,8 +79,8 @@ public class ProdController {
 ![](http://i.imgur.com/6OF19cf.png)
 
 > 执行结果： 
-	test1 
-	123 
+> test1 
+> 123 
 
 spring会自动根据参数名字封装进入，我们可以直接拿这个参数名来用.
 
