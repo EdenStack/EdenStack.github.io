@@ -2,7 +2,7 @@
 layout:     post
 title:      springmvc部分注解
 date:       2015-09-08 09:25:18
-summary:    Spring MVC之json
+summary:    Spring MVC annotation
 author:     Tneciv
 categories: spring
 thumbnail: code
@@ -48,6 +48,7 @@ public class ProdController {
 
 ##获取参数 @RequestParam
 在SpringMVC后台控制层获取参数的方式主要有两种，一种是request.getParameter("name")，另外一种是用注解@RequestParam直接获取。
+从前台获取到指定``@RequestParam(required = false, value = "vStatus") String vStatus``的值。
 
 ###1. 基本使用，获取提交的参数 
 
