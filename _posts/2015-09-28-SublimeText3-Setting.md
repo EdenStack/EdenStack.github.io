@@ -82,6 +82,9 @@ import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.
 ###插件：
 	EncodingHelper
 	ConvertToUTF8
+	Chinese​Localization 
+	IMESupport
+	HTML-CSS-JS Prettify
 
 主题：
 [brogrammer-theme](https://github.com/kenwheeler/brogrammer-theme "brogrammer-theme")
