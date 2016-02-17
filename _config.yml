@@ -22,8 +22,13 @@ footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://githu
 footer_right: "&lt;/&gt; on <a href=\"https://github.com/Tneciv\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
 
 # Build settings
+#markdown: redcarpet
+#redcarpet:
+#  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
 markdown: kramdown
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+kramdown:
+  input:         GFM
+  auto_ids:      true
+  auto_id_prefix:'id-'
 permalink: pretty
 exclude: [vendor]
