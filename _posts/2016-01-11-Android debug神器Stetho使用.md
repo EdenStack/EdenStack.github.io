@@ -13,11 +13,11 @@ tags:
 
 
 
-####[https://github.com/facebook/stetho](https://github.com/facebook/stetho "https://github.com/facebook/stetho")
+#### [https://github.com/facebook/stetho](https://github.com/facebook/stetho "https://github.com/facebook/stetho")
 
-##在Android Studio下使用：
+## 在Android Studio下使用：
 
-###加入依赖
+### 加入依赖
 
 Download [the latest JARs](https://github.com/facebook/stetho/releases/latest) or grab via Gradle:
 ```groovy
@@ -50,7 +50,7 @@ compile 'com.facebook.stetho:stetho-js-rhino:1.2.0'
 For more details on how to customize the JavaScript runtime see [stetho-js-rhino](stetho-js-rhino/).
 
 
-###在Application类中重写`oncreat`：
+### 在Application类中重写`oncreat`：
 
 
 ```java
@@ -67,7 +67,7 @@ public class App extends Application {
 }
 ```
 
-###在`manifest`文件中添加`Application`类名称，务必添加网络权限：
+### 在`manifest`文件中添加`Application`类名称，务必添加网络权限：
 
 ```xml
 
@@ -96,9 +96,10 @@ public class App extends Application {
 
 ```
 
-###在使用okhttp的位置开启：
+### 在使用okhttp的位置开启：
 
 ```java
+
  OkHttpClient okHttpClient = new OkHttpClient();
  okHttpClient.networkInterceptors().add(new StethoInterceptor());
 
