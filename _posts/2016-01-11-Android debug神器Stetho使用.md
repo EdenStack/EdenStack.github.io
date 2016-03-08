@@ -20,33 +20,45 @@ tags:
 ### 加入依赖
 
 Download [the latest JARs](https://github.com/facebook/stetho/releases/latest) or grab via Gradle:
-```groovy
+```xml
+
 compile 'com.facebook.stetho:stetho:1.2.0'
+
 ```
+
 or Maven:
 ```xml
+
 <dependency>
   <groupId>com.facebook.stetho</groupId>
   <artifactId>stetho</artifactId>
   <version>1.2.0</version>
 </dependency>
+
 ```
 
 选择对应网络请求框架:
 
-```groovy
+```xml
+
 compile 'com.facebook.stetho:stetho-okhttp:1.2.0'
+
 ```
 or:
-```groovy
+```xml
+
 compile 'com.facebook.stetho:stetho-urlconnection:1.2.0'
+
 ```
 
 开启js控制台:
 
-```groovy
+```xml
+
 compile 'com.facebook.stetho:stetho-js-rhino:1.2.0'
+
 ```
+
 For more details on how to customize the JavaScript runtime see [stetho-js-rhino](stetho-js-rhino/).
 
 
@@ -54,6 +66,7 @@ For more details on how to customize the JavaScript runtime see [stetho-js-rhino
 
 
 ```java
+
 public class App extends Application {
     @Override
     public void onCreate() {
@@ -65,6 +78,7 @@ public class App extends Application {
                         .build());
     }
 }
+
 ```
 
 ### 在`manifest`文件中添加`Application`类名称，务必添加网络权限：
