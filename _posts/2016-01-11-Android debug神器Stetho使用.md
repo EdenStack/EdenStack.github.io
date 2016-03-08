@@ -20,13 +20,15 @@ tags:
 ### 加入依赖
 
 Download [the latest JARs](https://github.com/facebook/stetho/releases/latest) or grab via Gradle:
-```xml
+
+```gradle
 
 compile 'com.facebook.stetho:stetho:1.2.0'
 
 ```
 
 or Maven:
+
 ```xml
 
 <dependency>
@@ -39,13 +41,15 @@ or Maven:
 
 选择对应网络请求框架:
 
-```xml
+```gradle
 
 compile 'com.facebook.stetho:stetho-okhttp:1.2.0'
 
 ```
+
 or:
-```xml
+
+```gradle
 
 compile 'com.facebook.stetho:stetho-urlconnection:1.2.0'
 
@@ -53,7 +57,7 @@ compile 'com.facebook.stetho:stetho-urlconnection:1.2.0'
 
 开启js控制台:
 
-```xml
+```gradle
 
 compile 'com.facebook.stetho:stetho-js-rhino:1.2.0'
 
