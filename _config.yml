@@ -16,20 +16,15 @@ encoding: "utf-8"
 # Social usernames/URLs
 github_username:  Tneciv
 weixin: debut_
-stackoverflow_link: http://tneciv.github.io/
+# linkedin_link: http://carte-noire.jacobtomlinson.co.uk/
+# google_plus_link: http://carte-noire.jacobtomlinson.co.uk/
+# stackoverflow_link: http://carte-noire.jacobtomlinson.co.uk/
 
 # Footer
 footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://github.com/Tneciv\">Tneciv</a>"
 footer_right: "&lt;/&gt; on <a href=\"https://github.com/Tneciv\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
 
 # Build settings
-# markdown: redcarpet
-# redcarpet:
-#   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
-
-# permalink: pretty
-# exclude: [vendor]
-
 markdown: kramdown
 
 kramdown:
