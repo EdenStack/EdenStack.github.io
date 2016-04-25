@@ -14,13 +14,16 @@ tags:
  - inject
 ---
 
-###视图绑定
+### 视图绑定
+
 ``@Bind``与view Id同时使用
 > ``@Bind(R.id.tv) TextView textview;``
 > ``onCreate``中使用``Butterknife.bind(this);``进行初始化
 
-###资源绑定
+### 资源绑定
+
 ````java
+
 class ExampleActivity extends Activity {
     @BindString(R.string.title)
     String title;
@@ -34,8 +37,10 @@ class ExampleActivity extends Activity {
 }
 ````
 
-###无activity绑定
+### 无activity绑定
+
 ````java
+
 public class FancyFragment extends Fragment {
     @Bind(R.id.button1)
     Button button1;
@@ -52,7 +57,8 @@ public class FancyFragment extends Fragment {
 }
 ````
 
-###简化ViewHolder
+### 简化ViewHolder
+
 ````java
 public class MyAdapter extends BaseAdapter {
   @Override public View getView(int position, View view, ViewGroup parent) {
@@ -82,7 +88,8 @@ public class MyAdapter extends BaseAdapter {
 }
 ````
 
-###将多个view放置到List或者Array数组中
+### 将多个view放置到List或者Array数组中
+
 ````java
 @Bind({ R.id.first_name, R.id.middle_name, R.id.last_name })
 List<EditText> nameViews;
@@ -102,7 +109,7 @@ ButterKnife.apply(nameViews, ENABLED, false);
 ButterKnife.apply(nameViews, View.ALPHA, 0.0f);
 ````
 
-###绑定监听器
+### 绑定监听器
 ````java
 @OnClick(R.id.submit)
 public void submit(View view) {
@@ -110,7 +117,7 @@ public void submit(View view) {
 }
 ````
 
-####监听器参数可选
+#### 监听器参数可选
 ````java
 @OnClick(R.id.submit)
 public void submit() {
@@ -118,7 +125,7 @@ public void submit() {
 }
 ````
 
-####可以自定义所绑定的参数类型
+#### 可以自定义所绑定的参数类型
 ````java
 @OnClick(R.id.submit)
 public void sayHi(Button button) {
@@ -126,7 +133,7 @@ public void sayHi(Button button) {
 }
 ````
 
-####为多个事件共同绑定同一个监听器
+#### 为多个事件共同绑定同一个监听器
 ````java
 @OnClick({ R.id.door1, R.id.door2, R.id.door3 })
 public void pickDoor(DoorView door) {
@@ -138,7 +145,7 @@ public void pickDoor(DoorView door) {
 }
 ````
 
-####自定义的views可以绑定到其自己的listener(不用指定ID)
+#### 自定义的views可以绑定到其自己的listener(不用指定ID)
 ````java
 public class FancyButton extends Button {
   @OnClick
@@ -148,7 +155,7 @@ public class FancyButton extends Button {
 }
 ````
 
-###绑定重置（针对Fragment）
+### 绑定重置（针对Fragment）
 由于Fragment与Activity生命周期不同，在``onCreateView``中绑定Fragment时，如果需要在``onDestroyView``中将view设为null，可以使用ButterKnife的``unbind``方法
 
 ````java
@@ -170,7 +177,7 @@ public class FancyFragment extends Fragment {
 }
 ````
 
-###绑定其他属性
+### 绑定其他属性
 ``@Nullable``注解可允许相对应的view或者listener为空
 
 ````java
@@ -181,7 +188,7 @@ public class FancyFragment extends Fragment {
 }
 ````
 
-###BONUS
+### BONUS
 可以针对activity、view、dialog使用findById方式(需要import ButterKnife.findById)
 
 ````java

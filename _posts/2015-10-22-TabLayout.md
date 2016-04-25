@@ -15,22 +15,23 @@ tags:
 
 展示三种类型的 TabLayout，Text 类型，Icon 类型，和自定义的 Tab。
 
-###TabLayout－Text 预览
+### TabLayout－Text 预览
 
 ![TabLayout－Text](http://i.imgur.com/goeTYhB.gif)
 
 
 前提条件得满足。
 
-
+```gradle
 compile 'com.android.support:design:22.2.1'
 compile 'com.android.support:appcompat-v7:22.2.1'
+```
 
 
-###TabLayout
+### TabLayout
 新建一个 xml 文件，声明 TabLayout & ViewPager。
 
-````xml
+```xml
 
 <android.support.design.widget.TabLayout
    android:id="@+id/layout_tab"
@@ -44,13 +45,13 @@ compile 'com.android.support:appcompat-v7:22.2.1'
    android:layout_width="match_parent"
    />
 
-````
+```
 
 ###TabLayout Style
 
 MyCustomTabLayout是自定义的 TabLayout 样式。各个选项的功能很容易从字面上理解。可以设置文字选择之后的颜色，指示线的颜色等。
 
-````xml
+```xml
 
 <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
    <item name="tabIndicatorColor">?attr/colorAccent</item>
@@ -67,17 +68,17 @@ MyCustomTabLayout是自定义的 TabLayout 样式。各个选项的功能很容�
    <item name="textAllCaps">false</item> <!--文本大写-->
 </style>
 
-````
+```
 
-###ViewPager
+### ViewPager
 
 ViewPager 里面包含三个 Fragment 用来展示内容。
 
-###Fragment
+### Fragment
 
 每个 Fragment 里面只有一个 TextView。
 
-````java
+```java
 
 public class ViewpaperFragment extends Fragment  {
 
@@ -117,14 +118,14 @@ public class ViewpaperFragment extends Fragment  {
 
 }
 
-````
+```
 
 
-##FragmentPagerAdapter
+## FragmentPagerAdapter
 
 在 FragmentPagerAdapter 里面添加 ViewPager 的页面，并添加 TabLayout 的 Tab 选项。
 
-````java
+```java
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
 
@@ -159,24 +160,24 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     }
 }
 
-````
+```
 
 其实只要注意 getPageTitle 方法就好了，这里面设置了 Tab 的显示内容。
 
 设置 TabLayout
 
-````java
+```java
 
 adapter = new ViewPagerAdapter(
       getActivity().getSupportFragmentManager(), getActivity());
 mViewPager.setAdapter(adapter);
 mTabLayout.setupWithViewPager(mViewPager);
 
-````
+```
 
 setupWithViewPager 之后带文本的 Tab 就会跟随 ViewPager 的滑动而改变。
 
-###TabLayout－Icon 预览
+### TabLayout－Icon 预览
 ![TabLayout－Icon](http://i.imgur.com/2tOb3NP.gif)
 
 
@@ -185,7 +186,7 @@ Icon
 
 使用图标类型的 Tab，只要更改 getPageTitle 方法。
 
-````java
+```java
 
 @Override
 public CharSequence getPageTitle(int position) {
@@ -198,16 +199,16 @@ public CharSequence getPageTitle(int position) {
    return sb;
 }
 
-````
+```
 
-###TabLayout－自定义预览
+### TabLayout－自定义预览
 ![自定义预览](http://i.imgur.com/MiIxzfi.gif)
 
 自定义的 Tab 布局
 
 布局很常见，就是上面图标，下面文字。
 
-````xml
+```xml
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
@@ -229,7 +230,7 @@ public CharSequence getPageTitle(int position) {
         android:layout_height="wrap_content" />
 </LinearLayout>
 
-````
+```
 
 这里有个系统的 id，ImageView 的是 icon，TextView 的是 text1，直接使用这个 id 的话，直接可以使用 tab.setText() 和 tab.setIcon() 来设置图标和文字。
 
@@ -237,7 +238,7 @@ public CharSequence getPageTitle(int position) {
 
 像往常一样，选中状态写的 seletor 就可以，类似这样。文字的更改一下颜色。
 
-````xml
+```xml
 
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
@@ -271,13 +272,13 @@ public CharSequence getPageTitle(int position) {
         android:drawable="@drawable/ic_action_filter_1_s" />
 </selector>
 
-````
+```
 
-###设置 Tab
+### 设置 Tab
 
 注释之前的 getPageTitle 方法，增加 getTabView 方法。
 
-````java
+```java
 
 public View getTabView(int position,TabLayout.Tab tab){
 
@@ -292,28 +293,28 @@ public View getTabView(int position,TabLayout.Tab tab){
    return v;
 }
 
-````
+```
 
 这里给每一个 tab 设置文字和图标。
 
-###设置 CustomView
+### 设置 CustomView
 
 给每一个 Tab 设置自定义的布局。
 
-````java
+```java
 
 for(int i=0;i<mTabLayout.getTabCount();i++){
     TabLayout.Tab tab = mTabLayout.getTabAt(i);
     tab.setCustomView(adapter.getTabView(i,tab));
  }
 
-````
+```
 
 Tab 不显示问题
 
 这个是之后补充的。在写后面文章的时候，更改了一下 xml 里面的显示布局，运行之后发现 tab 竟然不显示了。开始以为是被标题栏遮挡住了，试过 ``android:fitsSystemWindows="true"`` 和设置高度都不行。最后找到了解决方式。`
 
-````java
+```java
 
 if (ViewCompat.isLaidOut(mTabLayout)) {
   mTabLayout.setupWithViewPager(mViewPager);
@@ -327,4 +328,4 @@ if (ViewCompat.isLaidOut(mTabLayout)) {
   });
 }
 
-````
+```

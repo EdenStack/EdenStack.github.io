@@ -12,7 +12,7 @@ tags:
  - cardview
 ---
 
-##RecyclerView Examples
+## RecyclerView Examples
 
 RecyclerView provides these built-in layout managers:
 
@@ -127,7 +127,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
 ````
 
-##Create Cards
+## Create Cards
 
 Use these properties to customize the appearance of the CardView widget:
 
