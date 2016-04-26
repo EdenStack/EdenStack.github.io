@@ -13,10 +13,9 @@ tags:
 
 
 
-###Sublimetext个人设置
+### Sublimetext个人设置
 
 ````json
-
 {
 	"color_scheme": "Packages/Theme - itg.flat/itg.Monokai.tmTheme",
 	"default_encoding": "UTF-8",
@@ -34,13 +33,11 @@ tags:
 	"word_wrap": true,
 	"wrap_width": 0
 }
-
 ````
 
-###按键绑定
+### 按键绑定
 
 ````json
-
 [
     {
         "keys": ["ctrl+shift+f"], "command": "js_format",
@@ -48,11 +45,11 @@ tags:
         "context": [{"key": "selector", "operator": "equal", "operand": "source.js,source.json"}]
     }
 ]
-
 ````
 
-###Sublime Text Build 3083 x64 Setup.exe
-##激活码(全部粘贴)：
+### Sublime Text Build 3083 x64 Setup.exe
+
+## 激活码(全部粘贴)：
 
 	----- BEGIN LICENSE -----
 	Andrew Weber
@@ -74,12 +71,10 @@ tags:
 使用Ctrl+`快捷键或者通过View->Show Console菜单打开命令行，粘贴如下代码：
 
 ````
-
 import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
-
 ````
 
-###插件：
+### 插件：
 	EncodingHelper
 	ConvertToUTF8
 	Chinese​Localization 
