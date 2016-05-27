@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      ButterKnife 8.0.1 配置与使用说明
-date:       2015-09-07 10:47:18
+date:       2016-05-27 18:47:18
 summary:    ButterKnife
 author:     Tneciv
 categories: android
@@ -36,7 +36,7 @@ task clean(type: Delete) {
 }
 ```
 
-###　2.在`Module`的`build.gradle`文件中增加`plugin`
+### 2.在`Module`的`build.gradle`文件中增加`plugin`
 
 ```xml
 apply plugin: 'com.neenbedankt.android-apt'
