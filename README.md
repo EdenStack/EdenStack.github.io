@@ -1,5 +1,7 @@
 # Carte Noire
 
+Forked from https://github.com/jacobtomlinson/carte-noire/
+
 A simple Jekyll theme for blogging. Not named after the coffee.
 
 ![Homepage](http://i.imgur.com/xlmHArV.png)
