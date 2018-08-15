@@ -22,7 +22,7 @@ weixin: debut_
 
 # Footer
 footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://github.com/Tneciv\">Tneciv</a>"
-footer_right: "&lt;/&gt; on <a href=\"https://github.com/Tneciv\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
+footer_right: "&lt;/&gt; on <a href=\"https://github.com/Tneciv\">Github</a> &nbsp;<i class=\"fab fa-github-alt\"></i>"
 
 # Build settings
 markdown: kramdown
