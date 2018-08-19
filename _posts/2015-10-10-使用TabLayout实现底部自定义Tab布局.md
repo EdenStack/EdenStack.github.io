@@ -5,7 +5,7 @@ date:       2015-10-10 11:50:18
 summary:    自定义Tab布局
 author:     Tneciv
 categories: android
-thumbnail: android
+thumbnail: fab fa-android
 tags:
  - tablayout
  - tab

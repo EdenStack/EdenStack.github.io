@@ -5,7 +5,7 @@ date:       2015-08-13 12:32:18
 summary:    spring的IOC原理，降低耦合
 author:     Tneciv
 categories: jekyll
-thumbnail: optin-monster
+thumbnail: fab fa-optin-monster
 tags:
  - spring
  - IOC

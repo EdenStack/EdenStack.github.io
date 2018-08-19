@@ -4,7 +4,7 @@ title:      Using thumbnails
 date:       2014-08-08 20:08:18
 summary:    Using thumbnails in your Carte Noire articles.
 categories: jekyll
-thumbnail: jekyll
+thumbnail: fas fa-heart
 tags:
  - thumbnails
  - carte noire
