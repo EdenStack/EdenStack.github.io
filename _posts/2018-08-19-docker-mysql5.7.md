@@ -5,7 +5,7 @@ date:       2018-08-19 11:55:24
 summary:    deploy mysql5.7 with docker
 author:     Tneciv
 categories: Docker
-thumbnail:  docker
+thumbnail:  fab fa-docker
 tags:
  - docker
  - mysql

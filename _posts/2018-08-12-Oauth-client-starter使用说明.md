@@ -5,7 +5,7 @@ date:       2018-08-12 18:11:50
 summary:    oauth-client-starter usage
 author:     Tneciv
 categories: Java
-thumbnail:  award
+thumbnail:  fas fa-award
 tags:
  - Spring Boot
  
