@@ -12,8 +12,6 @@ tags:
  
 ---
 
-# 创建 Jenkins 任务
-
 ## Step 1 : 参数化构建过程
 
 ```
@@ -36,7 +34,9 @@ cp apigateway/target/*.jar /opt/jarbak
 /opt/restart.sh 8085 apigateway/target/*.jar
 ```
 
-## Steps 4 : Build with Parameters
+## Step 4 : Build with Parameters
+
+## restart.sh
 
 ```shell
 #! /bin/bash
@@ -44,8 +44,11 @@ cp apigateway/target/*.jar /opt/jarbak
 # ./restart.sh 8085 /target/apigateway.jar
 echo "端口号：$1";
 pid=`netstat -nlp | grep -w $1 | sed -r 's#.* (.*)/.*#\1#'`
-echo "Pid $pid will be killed"
+echo "旧应用进程: $pid"
+if [ -n "$pid" ]
+then
 kill -9 $pid
+fi
 sleep 3s
 echo "启动服务：$2"
 nohup java -jar $2 &
