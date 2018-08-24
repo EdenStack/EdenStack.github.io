@@ -54,3 +54,9 @@ echo "启动服务：$2"
 nohup java -jar $2 &
 sleep 30s
 ```
+
+
+
+shell permission : ``chmod +x restart.sh``
+
+restart Jenkins : ``systemctl restart jenkins``
