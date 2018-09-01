@@ -40,18 +40,28 @@ cp apigateway/target/*.jar /opt/jarbak
 
 ```shell
 #! /bin/bash
-# param1 : port should be killed , param2 : jar should be started
-# ./restart.sh 8085 /target/apigateway.jar
+# param1 : port should be killed , param2 : jar should be started , param3 : remote debug port
+# ./restart.sh 8085 /target/apigateway.jar 8086
+#! /bin/bash
 echo "端口号：$1";
 pid=`netstat -nlp | grep -w $1 | sed -r 's#.* (.*)/.*#\1#'`
-echo "旧应用进程: $pid"
-if [ -n "$pid" ]
-then
+echo "Old pid $pid will be killed"
 kill -9 $pid
-fi
 sleep 3s
 echo "启动服务：$2"
-nohup java -jar $2 &
+
+if [ "$3" -gt 0 ] 2>/dev/null;
+then 
+  debugPid=`netstat -nlp | grep -w $3 | sed -r 's#.* (.*)/.*#\1#'`
+  echo "Old debug pid $debugPid will be killed"
+  kill -9 $debugPid
+  sleep 3s
+  echo "Remote debug port is $3 ." 
+  nohup java -jar -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=$3 $2 & 
+else
+  nohup java -jar $2 &  
+fi
+
 sleep 30s
 ```
 
