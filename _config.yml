@@ -5,7 +5,7 @@ description: "A dark blog theme for Jekyll forked by Tneciv."
 baseurl: ""
 url: "https://tneciv.github.io/"
 title_description: "O ever youthful, O ever weeping."
-title_image: "http://i.imgur.com/5tCDcyk.png"
+title_image: "https://i.imgur.com/5tCDcyk.png"
 google_analytics: "UA-66290738-1"
 disqus_account: cartenoire
 github_repository: https://tneciv.github.io/
