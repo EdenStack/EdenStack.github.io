@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 Disallow: /bin/
-Sitemap: http://tneciv.github.io/sitemap.xml
+Sitemap: https://edenstack.github.io/sitemap.xml
